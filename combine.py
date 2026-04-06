@@ -3,9 +3,11 @@ import pandas as pd
 import chardet
 import datetime
 
-csv_folder = "/Users/souhoonlee/Desktop/YISS ML/Final assignment/datasets/Data_market"
+#After downloading the files: read dthem into csv.
+csv_folder = "/Users/[USER]/Desktop/YISS ML/Final assignment/datasets/Data_market" #REPLACE [USER] WITH OWN USER.
 csv_files = [f for f in os.listdir(csv_folder) if f.endswith('.csv')]
 
+#set the same start and end date ranges.
 start_date = "2000-01-03 00:00:00+00:00"
 end_date = "2023-01-02 00:00:00+00:00"
 columns_to_sum = ["Date","Open", "High", "Low", "Close"]
